@@ -1,0 +1,46 @@
+✅ Diagramme de cas d’utilisation – FastFoodDelivery
+Acteurs :
+
+Technicien
+
+Administrateur (hérite des droits du technicien)
+
+Cas d’utilisation pour le Technicien :
+
+S’authentifier
+
+Signaler batterie réparée
+
+Enregistrer un remplacement de batterie
+
+Rédiger un rapport technique
+
+Cas d’utilisation supplémentaires pour l’Administrateur :
+
+Ajouter une batterie au système
+
+Consulter la liste des batteries
+
+Planifier des interventions
+
+Mettre à jour les informations d’une batterie
+
+Relation entre acteurs :
+
+Administrateur → hérite des fonctionnalités du Technicien
+
+
+                   [Système de gestion des batteries]
+
+Technicien                         Administrateur
+   |                                      |
+   |------------------------------>       |
+   | 1. S'authentifier                   /|\ (hérite du Technicien)
+   | 2. Signaler batterie réparée        |
+   | 3. Enregistrer remplacement         |
+   | 4. Rédiger rapport technique        |
+                                        \|/
+                                 5. Ajouter batterie
+                                 6. Consulter liste batteries
+                                 7. Planifier interventions
+                                 8. Mettre à jour batterie
