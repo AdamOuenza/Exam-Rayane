@@ -1,0 +1,42 @@
+Selon la liste des tâches suivantes :
+
+Tâche	Durée (en jours)	Tâches antérieures
+A	1	-
+B	3	A
+C	2	A
+D	2	B
+E	4	C
+F	1	C, D, E
+
+Dresser le diagramme PERT (3 pts)
+→ Voici l’ordre d’enchaînement :
+
+A → B → D
+
+A → C → E
+
+D, C, E → F
+
+Tu places les flèches en respectant les antériorités.
+Il y a 2 chemins principaux à analyser.
+
+Déterminer la durée d’exécution du projet (1 pt)
+
+Calcule la durée des chemins :
+
+A(1j) → B(3j) → D(2j) → F(1j) = 7 jours
+
+A(1j) → C(2j) → E(4j) → F(1j) = 8 jours
+
+→ Durée totale = 8 jours (chemin critique)
+
+Détecter le chemin critique (1 pt)
+→ Le chemin critique est celui qui prend le plus de temps :
+A → C → E → F
+
+La tâche D est-elle sur le chemin critique ? Justifiez. (1 pt)
+Non.
+→ La tâche D fait partie du chemin A → B → D → F qui prend 7 jours, donc ce n’est pas le chemin critique.
+
+La tâche F dépend de combien d'autres tâches ? (1 pt)
+→ Tâche F dépend de trois tâches : C, D et E
