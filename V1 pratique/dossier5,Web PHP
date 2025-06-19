@@ -1,0 +1,56 @@
+<?php
+
+// ===== 1) Création de la classe Batterie avec le champ capacité privé =====
+class Batterie {
+    private $capacite;
+    private $statut;
+
+    // ===== 2) Setter pour capacité =====
+    public function setCapacite($capacite) {
+        $this->capacite = $capacite;
+    }
+
+    // Setter pour statut
+    public function setStatut($statut) {
+        $this->statut = $statut;
+    }
+
+    // ===== 3 + 4) Méthode VerifierEntretienRequis =====
+    // Retourne true si statut = "en panne" ou capacité ≤ 30%
+    public function VerifierEntretienRequis() {
+        $cap = (int) rtrim($this->capacite, "%");
+        return $this->statut === "en panne" || $cap <= 30;
+    }
+
+    // (optionnel) Pour tester si besoin
+    public function getCapacite() {
+        return $this->capacite;
+    }
+}
+
+// ===== 5) Tester la classe avec un tableau de batteries =====
+
+$b1 = new Batterie();
+$b1->setCapacite("190%");
+$b1->setStatut("en panne");
+
+$b2 = new Batterie();
+$b2->setCapacite("350%");
+$b2->setStatut("en service");
+
+$b3 = new Batterie();
+$b3->setCapacite("25%");
+$b3->setStatut("en service");
+
+$batteries = [$b1, $b2, $b3];
+
+$nb = 0;
+foreach ($batteries as $batt) {
+    if ($batt->VerifierEntretienRequis()) {
+        $nb++;
+    }
+}
+
+echo "Nombre de batteries nécessitant un entretien : $nb";
+
+?>
