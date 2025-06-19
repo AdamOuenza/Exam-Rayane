@@ -1,0 +1,31 @@
+1. 📈 Diagramme PERT (3 pts)
+Voici les chemins et leurs durées :
+
+A → B → D → E → F
+= 2 + 1 + 4 + 2 + 1 = 10 jours
+
+A → C → D → E → F
+= 2 + 3 + 4 + 2 + 1 = 12 jours
+
+🔴 Chemin critique = A → C → D → E → F
+
+2. 🔍 Chemin critique (1 pt)
+✅ Chemin critique : A → C → D → E → F
+
+3. ⏱️ Durée totale du projet (1 pt)
+✅ Durée totale = 12 jours
+
+4. ⚠️ Retard sur la tâche B (au lieu de 1j, elle prend 4j) (2 pts)
+a. Nouveau chemin critique
+Comparons :
+
+A → B(4j) → D(4j) → E(2j) → F(1j)
+= 2 + 4 + 4 + 2 + 1 = 13 jours
+
+A → C(3j) → D(4j) → E(2j) → F(1j)
+= 2 + 3 + 4 + 2 + 1 = 12 jours
+
+✅ Nouveau chemin critique = A → B → D → E → F
+
+b. Nouvelle durée totale du projet
+✅ Durée = 13 jours
