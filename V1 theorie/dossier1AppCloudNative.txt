@@ -1,0 +1,39 @@
+1. Quels sont les composants principaux de Docker ? (2 pts)
+
+Docker Engine : moteur qui exécute les conteneurs
+
+Images : modèles contenant l'application et ses dépendances
+
+Conteneurs : instances actives d’images
+
+Dockerfile : fichier texte pour construire une image
+
+Docker Hub : plateforme de partage d’images
+
+
+
+2. Comment installer Express.js ? (2 pts)
+
+Crée un dossier et entre dedans :
+mkdir mon-projet && cd mon-projet
+
+Initialise un projet Node.js :
+npm init -y
+
+Installe Express :
+npm install express
+
+
+3. Comment afficher les images Docker ? (2 pts)
+docker images
+
+
+4. Comment fonctionne RabbitMQ ? (2 pts)
+
+RabbitMQ est un système de messagerie qui fait transiter des messages entre services.
+
+Un producteur envoie un message → RabbitMQ le place dans une queue → un consommateur le récupère.
+
+Cela permet une communication asynchrone et fiable entre applications.
+
+Il utilise le protocole AMQP pour le routage des messages.
